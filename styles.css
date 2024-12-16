@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'CustomFont', sans-serif;
+}
+
+/* Import custom font */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/fonts.ttf') format('truetype');
+}
+
+/* Body and Content Styling */
+body {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: #34495e;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-link {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.tab-link:hover {
+    background-color: #2980b9;
+    border-radius: 5px;
+}
+
+/* Content Styling */
+.content {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/* Menu Item Styles */
+.menu-item {
+    position: relative;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.menu-text {
+    background-color: #34495e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.menu-text:hover {
+    background-color: #2980b9;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.5s ease;
+}
+
+.dropdown-item {
+    background-color: #34495e;
+    padding: 8px 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #2980b9;
+}
+
+/* Dropdown Show when Active */
+.menu-item:hover .dropdown {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Customization Inputs */
+input[type="range"] {
+    width: 80%;
+    margin: 10px 0;
+}
+
+input[type="color"] {
+    width: 80%;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    color: #ecf0f1;
+}
+
+/* For FOV and Size customization */
+#fov-dropdown, #silent-fov-dropdown {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Silent Aim Customizations */
+#silent-dropdown .dropdown-item {
+    background-color: #34495e;
+    cursor: pointer;
+}
