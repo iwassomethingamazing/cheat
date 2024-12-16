@@ -4,7 +4,7 @@ function toggleDropdown(id) {
     // Toggle the visibility of the dropdown
     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
     
-    // Apply animation for smooth visibility change
+    // Apply smooth transition for dropdown visibility
     dropdown.style.opacity = dropdown.style.opacity === '1' ? '0' : '1';
     dropdown.style.visibility = dropdown.style.visibility === 'visible' ? 'hidden' : 'visible';
     dropdown.style.transform = dropdown.style.transform === 'translateY(0)' ? 'translateY(-20px)' : 'translateY(0)';
