@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox External Cheat Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="tabs">
+            <a href="index.html" class="tab-link">Features</a>
+            <a href="info.html" class="tab-link">Info</a>
+        </div>
+    </div>
+
+    <!-- Main content (Features Tab) -->
+    <div class="content">
+        <h1>Roblox External Cheat Tool - Features</h1>
+
+        <!-- AIMING Section -->
+        <div class="menu-item">
+            <p class="menu-text" onclick="toggleDropdown('aiming-dropdown')">[+] AIMING</p>
+            <div id="aiming-dropdown" class="dropdown">
+                <!-- AIM ASSIST Section -->
+                <p class="dropdown-item" onclick="toggleDropdown('aim-assist-dropdown')">[+] AIM ASSIST</p>
+                <div id="aim-assist-dropdown" class="dropdown">
+                    <p class="dropdown-item">Camera</p>
+                    <p class="dropdown-item">Mouse</p>
+                    <p class="dropdown-item">Smooth (Y X)</p>
+                    <p class="dropdown-item">Shake (Y X)</p>
+
+                    <!-- FOV -->
+                    <p class="dropdown-item" onclick="toggleDropdown('fov-dropdown')">[+] FOV</p>
+                    <div id="fov-dropdown" class="dropdown">
+                        <input type="range" min="0" max="120" value="60" id="fov-slider">
+                        <p>FOV: <span id="fov-value">60</span></p>
+                    </div>
+
+                    <!-- Color Customization -->
+                    <p class="dropdown-item">[+] Color Customization</p>
+                    <div class="dropdown">
+                        <input type="color" id="color-picker" value="#ff0000">
+                        <p>Pick a Color</p>
+                    </div>
+
+                    <!-- Size Customization -->
+                    <p class="dropdown-item">[+] Size Customization</p>
+                    <div class="dropdown">
+                        <input type="range" min="1" max="10" value="5" id="size-slider">
+                        <p>Size: <span id="size-value">5</span></p>
+                    </div>
+                </div>
+
+                <!-- Checks Section -->
+                <p class="dropdown-item" onclick="toggleDropdown('check-dropdown')">[+] Checks</p>
+                <div id="check-dropdown" class="dropdown">
+                    <p class="dropdown-item">Health-Check</p>
+                    <p class="dropdown-item">KO-Check</p>
+                    <p class="dropdown-item">Team-Check</p>
+                </div>
+
+                <!-- HitParts Section -->
+                <p class="dropdown-item" onclick="toggleDropdown('hitparts-dropdown')">[+] HitParts</p>
+                <div id="hitparts-dropdown" class="dropdown">
+                    <p class="dropdown-item">Head</p>
+                    <p class="dropdown-item">Torso</p>
+                    <p class="dropdown-item">Random</p>
+                </div>
+
+                <!-- Silent Aim Section -->
+                <p class="dropdown-item" onclick="toggleDropdown('silent-dropdown')">[+] Silent Aim</p>
+                <div id="silent-dropdown" class="dropdown">
+                    <p class="dropdown-item">Silent Aim</p>
+                    <p class="dropdown-item">Trace</p>
+                    <p class="dropdown-item">Smooth (Y X)</p>
+
+                    <!-- FOV in Silent Aim -->
+                    <p class="dropdown-item" onclick="toggleDropdown('silent-fov-dropdown')">[+] FOV</p>
+                    <div id="silent-fov-dropdown" class="dropdown">
+                        <input type="range" min="0" max="120" value="60" id="silent-fov-slider">
+                        <p>FOV: <span id="silent-fov-value">60</span></p>
+                    </div>
+
+                    <!-- Color Customization in Silent Aim -->
+                    <p class="dropdown-item">[+] Color Customization</p>
+                    <div class="dropdown">
+                        <input type="color" id="silent-color-picker" value="#ff0000">
+                        <p>Pick a Color</p>
+                    </div>
+
+                    <!-- Size Customization in Silent Aim -->
+                    <p class="dropdown-item">[+] Size Customization</p>
+                    <div class="dropdown">
+                        <input type="range" min="1" max="10" value="5" id="silent-size-slider">
+                        <p>Size: <span id="silent-size-value">5</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
